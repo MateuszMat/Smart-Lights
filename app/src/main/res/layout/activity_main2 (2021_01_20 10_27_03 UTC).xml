@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Light Control"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ON"
+        android:text="On" />
+
+    <Button
+        android:id="@+id/off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OFF"
+        android:text="Off" />
+
+    <SeekBar
+        android:id="@+id/Red"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@android:color/holo_red_dark"
+        android:backgroundTint="#FF0000"
+        android:max="255"/>
+
+    <SeekBar
+        android:id="@+id/Green"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@android:color/holo_green_dark"
+        android:backgroundTint="#00FF00"
+        android:max="255"/>
+
+    <SeekBar
+        android:id="@+id/Blue"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@android:color/holo_blue_dark"
+        android:backgroundTint="#0000FF"
+        android:max="255"/>
+
+    <Button
+        android:id="@+id/diff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="DIFF"
+        android:text="SET YOUR COLOR" />
+</LinearLayout>
